@@ -5,7 +5,6 @@ from datetime import datetime
 time_now=datetime.now().strftime("(%d-%m-%Y @ %I.%M_%p)")
 #SETTING UP EXCEL
 excel = openpyxl.Workbook()
-#workbook=openpyxl.load_workbook()
 sheet = excel.active
 
 # ADDING NAME TO THE EXCEL SHEET
@@ -25,13 +24,10 @@ try:
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36 Edg/115.0.1901.183',
             'Referer': f'https://www.udemy.com/courses/search/?p={i}&q=python&src=ukw'}
         response = requests.get(url=Url, headers=HEADERS).json()
-        # print(response['courses'])
     # USING FOR LOOP TO SCRAP ALL DATA FROM WEB
         for course in response['courses']:
-            # print(course)
     # USING DICTIONARY TO GET DATA FROM JSON FILE
             course_info = {
-
                 'image': course['image_304x171'],
                 'url': 'https://www.udemy.com'+course['url'],
                 'rating': course['rating'],
