@@ -54,6 +54,6 @@ try:
 
 # EXCEPTION BLOCK
 except Exception as e:
-    print(e)
+    print('Link not available')
 
 excel.save(f'Udemy WebScrap-{time_now}.xlsx')    
