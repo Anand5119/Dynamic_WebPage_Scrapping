@@ -11,6 +11,7 @@ Hi All😉,
   *  Using this we can extrtact course images, course link, rating and total hours of course.
 
 # REQUIREMENTS:
+* Python==3.10
 * Django==4.0.3
 * beautifulsoup4==4.12.2
 * numpy==1.22.3
