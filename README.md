@@ -1,4 +1,4 @@
-# Udemy_WebPage_Scrapping:
+# Dynamic_WebPage_Scrapping:
 --------------------------
 
 A Python project for Dynamic webpage scrapping!!!
